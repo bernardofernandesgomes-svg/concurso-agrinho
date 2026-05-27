@@ -1,79 +1,427 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Agrinho - Sustentabilidade na Agricultura</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrinho 2026 - Sustentabilidade na Agricultura</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="hero">
-    <nav>
-      <h1>🌱 Agrinho Sustentável</h1>
+  <!-- MENU -->
+
+  <header class="topo">
+
+    <nav class="menu">
+
+      <h1>🌱 Agrinho 2026</h1>
+
       <ul>
+
+        <li><a href="#inicio">Início</a></li>
+
         <li><a href="#sobre">Sobre</a></li>
+
+        <li><a href="#objetivos">Objetivos</a></li>
+
         <li><a href="#praticas">Práticas</a></li>
+
         <li><a href="#impactos">Impactos</a></li>
+
+        <li><a href="#curiosidades">Curiosidades</a></li>
+
+        <li><a href="#galeria">Galeria</a></li>
+
+        <li><a href="#quiz">Quiz</a></li>
+
         <li><a href="#contato">Contato</a></li>
+
       </ul>
+
     </nav>
 
-    <div class="hero-content">
-      <h2>Construindo um futuro sustentável no campo</h2>
-      <p>
-        A agricultura sustentável protege o meio ambiente, valoriza o produtor rural
-        e garante alimentos saudáveis para as próximas gerações.
-      </p>
-      <button id="botaoMensagem">Saiba Mais</button>
-    </div>
   </header>
 
-  <section id="sobre" class="section">
-    <h2>O que é Agricultura Sustentável?</h2>
+  <!-- HERO -->
+
+  <section class="hero" id="inicio">
+
+    <div class="hero-texto">
+
+      <h2>🌎 Sustentabilidade na Agricultura</h2>
+
+      <p>
+
+        Produzir alimentos sem destruir a natureza é essencial
+        para garantir um futuro melhor para todos.
+
+      </p>
+
+      <button id="btnSaibaMais">Saiba Mais</button>
+
+    </div>
+
+  </section>
+
+  <!-- TEXTO EXTRA -->
+
+  <section class="explicacao" id="explicacao">
+
+    <h2>🌿 Por que a sustentabilidade é importante?</h2>
+
     <p>
-      A agricultura sustentável busca produzir alimentos de forma responsável,
-      preservando os recursos naturais, economizando água e reduzindo impactos ambientais.
+
+      A sustentabilidade na agricultura ajuda a preservar rios,
+      florestas, animais e o solo. Ela também evita desperdícios
+      e reduz a poluição ambiental.
+
     </p>
+
+    <p>
+
+      Com técnicas sustentáveis, os produtores conseguem produzir
+      mais alimentos com menos impactos para a natureza.
+
+    </p>
+
+    <button id="fecharTexto">Fechar</button>
+
   </section>
 
-  <section id="praticas" class="cards">
-    <div class="card">
-      <h3>💧 Economia de Água</h3>
-      <p>
-        Sistemas de irrigação inteligentes ajudam a evitar desperdícios.
-      </p>
+  <!-- SOBRE -->
+
+  <section class="sobre" id="sobre">
+
+    <h2>📚 O que é Agricultura Sustentável?</h2>
+
+    <p>
+
+      A agricultura sustentável é uma forma de produzir alimentos
+      respeitando o meio ambiente e utilizando os recursos naturais
+      de maneira consciente.
+
+    </p>
+
+    <div class="sobre-cards">
+
+      <div class="sobre-box">
+
+        <h3>💧 Economia de Água</h3>
+
+        <p>
+
+          A água é essencial para a vida e deve ser utilizada
+          sem desperdícios.
+
+        </p>
+
+        <button onclick="mostrarTexto('agua')">
+          Ler Mais
+        </button>
+
+      </div>
+
+      <div class="sobre-box">
+
+        <h3>🌳 Preservação Ambiental</h3>
+
+        <p>
+
+          A natureza precisa ser protegida para manter o equilíbrio
+          do planeta.
+
+        </p>
+
+        <button onclick="mostrarTexto('natureza')">
+          Ler Mais
+        </button>
+
+      </div>
+
+      <div class="sobre-box">
+
+        <h3>♻️ Reciclagem</h3>
+
+        <p>
+
+          Reutilizar materiais reduz a quantidade de lixo
+          produzido.
+
+        </p>
+
+        <button onclick="mostrarTexto('reciclagem')">
+          Ler Mais
+        </button>
+
+      </div>
+
     </div>
 
-    <div class="card">
-      <h3>🌿 Preservação do Solo</h3>
-      <p>
-        Técnicas como rotação de culturas mantêm o solo fértil e saudável.
-      </p>
-    </div>
+    <div id="textoExtra"></div>
 
-    <div class="card">
-      <h3>♻️ Energia Limpa</h3>
-      <p>
-        O uso de energia solar reduz a emissão de poluentes no campo.
-      </p>
-    </div>
   </section>
 
-  <section id="impactos" class="section verde">
-    <h2>Impactos Positivos</h2>
-    <ul>
-      <li>✔ Redução da poluição ambiental</li>
-      <li>✔ Produção de alimentos mais saudáveis</li>
-      <li>✔ Preservação da biodiversidade</li>
-      <li>✔ Desenvolvimento econômico sustentável</li>
-    </ul>
+  <!-- OBJETIVOS -->
+
+  <section class="objetivos" id="objetivos">
+
+    <h2>🎯 Objetivos da Sustentabilidade</h2>
+
+    <div class="objetivos-container">
+
+      <div class="objetivo-card">
+        <h3>🌱 Preservar o Solo</h3>
+        <p>
+          Evitar erosões e manter a fertilidade da terra.
+        </p>
+      </div>
+
+      <div class="objetivo-card">
+        <h3>💦 Economizar Água</h3>
+        <p>
+          Utilizar sistemas inteligentes de irrigação.
+        </p>
+      </div>
+
+      <div class="objetivo-card">
+        <h3>🐝 Proteger Animais</h3>
+        <p>
+          Preservar espécies importantes para a agricultura.
+        </p>
+      </div>
+
+      <div class="objetivo-card">
+        <h3>☀️ Usar Energia Limpa</h3>
+        <p>
+          Reduzir a emissão de gases poluentes.
+        </p>
+      </div>
+
+    </div>
+
   </section>
 
-  <footer id="contato">
-    <p>Projeto Agrinho 2026 | Sustentabilidade na Agricultura 🌎</p>
+  <!-- PRÁTICAS -->
+
+  <section class="praticas" id="praticas">
+
+    <h2>🚜 Práticas Sustentáveis</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🌿 Rotação de Culturas</h3>
+
+        <p>
+          Alternar diferentes plantações melhora o solo.
+        </p>
+
+        <button onclick="alert('A rotação de culturas ajuda a diminuir pragas e melhora a fertilidade do solo.')">
+          Saiba Mais
+        </button>
+
+      </div>
+
+      <div class="card">
+
+        <h3>☀️ Energia Solar</h3>
+
+        <p>
+          Utilizar energia limpa ajuda o meio ambiente.
+        </p>
+
+        <button onclick="alert('A energia solar reduz os impactos ambientais e economiza energia.')">
+          Saiba Mais
+        </button>
+
+      </div>
+
+      <div class="card">
+
+        <h3>🌳 Reflorestamento</h3>
+
+        <p>
+          Plantar árvores ajuda a combater o aquecimento global.
+        </p>
+
+        <button onclick="alert('As árvores ajudam na produção de oxigênio e proteção do clima.')">
+          Saiba Mais
+        </button>
+
+      </div>
+
+      <div class="card">
+
+        <h3>🐄 Pecuária Sustentável</h3>
+
+        <p>
+          Produção animal sem causar grandes impactos ambientais.
+        </p>
+
+        <button onclick="alert('A pecuária sustentável melhora o cuidado com os animais e o meio ambiente.')">
+          Saiba Mais
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- IMPACTOS -->
+
+  <section class="impactos" id="impactos">
+
+    <h2>🌎 Impactos Positivos</h2>
+
+    <div class="impactos-container">
+
+      <div class="impacto-box">
+
+        <h3>🌿 Meio Ambiente</h3>
+
+        <p>
+          Menor poluição e mais preservação ambiental.
+        </p>
+
+      </div>
+
+      <div class="impacto-box">
+
+        <h3>🍎 Alimentação Saudável</h3>
+
+        <p>
+          Alimentos naturais e mais nutritivos.
+        </p>
+
+      </div>
+
+      <div class="impacto-box">
+
+        <h3>💚 Qualidade de Vida</h3>
+
+        <p>
+          Mais saúde para toda a população.
+        </p>
+
+      </div>
+
+      <div class="impacto-box">
+
+        <h3>📈 Economia</h3>
+
+        <p>
+          Desenvolvimento sustentável para o campo.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CURIOSIDADES -->
+
+  <section class="curiosidades" id="curiosidades">
+
+    <h2>🤔 Curiosidades</h2>
+
+    <div class="curiosidade-card">
+
+      <h3>Você sabia?</h3>
+
+      <p id="curiosidadeTexto">
+
+        Clique no botão para descobrir uma curiosidade.
+
+      </p>
+
+      <button id="btnCuriosidade">
+        Mostrar Curiosidade
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- GALERIA -->
+
+  <section class="galeria" id="galeria">
+
+    <h2>📸 Galeria</h2>
+
+    <div class="imagens">
+
+      <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854">
+
+      <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399">
+
+      <img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf">
+
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+
+    </div>
+
+  </section>
+
+  <!-- QUIZ -->
+
+  <section class="quiz" id="quiz">
+
+    <h2>🧠 Quiz Sustentável</h2>
+
+    <p>
+
+      Qual dessas práticas ajuda o meio ambiente?
+
+    </p>
+
+    <div class="quiz-botoes">
+
+      <button onclick="respostaErrada()">
+        Desmatamento
+      </button>
+
+      <button onclick="respostaCerta()">
+        Reflorestamento
+      </button>
+
+      <button onclick="respostaErrada()">
+        Poluição dos rios
+      </button>
+
+    </div>
+
+    <p id="resultadoQuiz"></p>
+
+  </section>
+
+  <!-- CONTATO -->
+
+  <section class="contato" id="contato">
+
+    <h2>📞 Contato</h2>
+
+    <p>Email: agrinho2026@gmail.com</p>
+
+    <p>Telefone: (45) 99938-0477</p>
+
+    <p>Projeto Agrinho 2026</p>
+
+  </section>
+
+  <!-- RODAPÉ -->
+
+  <footer>
+
+    <p>
+      🌱 Agrinho 2026 | Sustentabilidade na Agricultura
+    </p>
+
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>

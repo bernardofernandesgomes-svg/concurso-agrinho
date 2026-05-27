@@ -5,460 +5,444 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Agrinho 2026 | Sustentabilidade na Agricultura</title>
+  <title>EcoCampo | Agrinho 2026</title>
 
   <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
 
-  <!-- LOADING -->
+  <!-- MENU LATERAL -->
 
-  <div id="loading">
+  <aside class="sidebar">
 
-    <div class="loader"></div>
+    <h1>🌿 EcoCampo</h1>
 
-    <h2>🌱 Carregando Projeto Agrinho...</h2>
+    <nav>
 
-  </div>
+      <a href="#inicio">🏠 Início</a>
 
-  <!-- MENU -->
+      <a href="#sustentabilidade">🌱 Sustentabilidade</a>
 
-  <header>
+      <a href="#desafios">⚠️ Desafios</a>
 
-    <nav class="menu">
+      <a href="#solucoes">💡 Soluções</a>
 
-      <h1>🌱 Agrinho 2026</h1>
+      <a href="#tecnologia">🤖 Tecnologia</a>
 
-      <ul>
+      <a href="#dados">📊 Dados</a>
 
-        <li><a href="#inicio">Início</a></li>
+      <a href="#quiz">🧠 Quiz</a>
 
-        <li><a href="#sobre">Sobre</a></li>
-
-        <li><a href="#beneficios">Benefícios</a></li>
-
-        <li><a href="#praticas">Práticas</a></li>
-
-        <li><a href="#estatisticas">Estatísticas</a></li>
-
-        <li><a href="#quiz">Quiz</a></li>
-
-        <li><a href="#videos">Vídeos</a></li>
-
-        <li><a href="#contato">Contato</a></li>
-
-      </ul>
+      <a href="#contato">📞 Contato</a>
 
     </nav>
 
-  </header>
+  </aside>
 
-  <!-- HERO -->
+  <!-- CONTEÚDO -->
 
-  <section class="hero" id="inicio">
+  <main class="conteudo">
 
-    <div class="hero-conteudo">
+    <!-- HERO -->
 
-      <h2>
-        Sustentabilidade na Agricultura
-      </h2>
+    <section class="hero" id="inicio">
+
+      <div class="overlay"></div>
+
+      <div class="hero-texto">
+
+        <h2>
+          Agricultura Sustentável
+        </h2>
+
+        <p>
+
+          Produzir alimentos respeitando
+          a natureza é essencial para o futuro.
+
+        </p>
+
+        <button id="explorar">
+          Explorar Projeto
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- SUSTENTABILIDADE -->
+
+    <section class="secao" id="sustentabilidade">
+
+      <div class="titulo-secao">
+
+        <span>🌱</span>
+
+        <h2>O que é Sustentabilidade?</h2>
+
+      </div>
+
+      <div class="layout-duplo">
+
+        <div class="texto">
+
+          <p>
+
+            A sustentabilidade na agricultura busca produzir
+            alimentos de forma consciente, preservando água,
+            solo, florestas e animais.
+
+          </p>
+
+          <p>
+
+            O objetivo é garantir recursos naturais
+            para as próximas gerações.
+
+          </p>
+
+          <button onclick="abrirModal()">
+            Ler Explicação Completa
+          </button>
+
+        </div>
+
+        <div class="imagem">
+
+          <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854">
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- DESAFIOS -->
+
+    <section class="desafios" id="desafios">
+
+      <h2>⚠️ Problemas Ambientais</h2>
+
+      <div class="painel-cards">
+
+        <div class="painel">
+
+          <h3>🔥 Queimadas</h3>
+
+          <p>
+
+            As queimadas prejudicam o solo,
+            os animais e aumentam a poluição.
+
+          </p>
+
+        </div>
+
+        <div class="painel">
+
+          <h3>💧 Desperdício de Água</h3>
+
+          <p>
+
+            O uso excessivo da água pode causar
+            escassez no futuro.
+
+          </p>
+
+        </div>
+
+        <div class="painel">
+
+          <h3>🌳 Desmatamento</h3>
+
+          <p>
+
+            O desmatamento destrói habitats
+            naturais e prejudica o clima.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SOLUÇÕES -->
+
+    <section class="solucoes" id="solucoes">
+
+      <h2>💡 Soluções Sustentáveis</h2>
+
+      <div class="accordion">
+
+        <div class="accordion-item">
+
+          <button class="accordion-btn">
+            💧 Irrigação Inteligente
+          </button>
+
+          <div class="accordion-content">
+
+            <p>
+
+              Sistemas modernos economizam água
+              e aumentam a eficiência da produção.
+
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+          <button class="accordion-btn">
+            ☀️ Energia Solar
+          </button>
+
+          <div class="accordion-content">
+
+            <p>
+
+              A energia solar é limpa,
+              renovável e reduz a poluição.
+
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+          <button class="accordion-btn">
+            ♻️ Reciclagem
+          </button>
+
+          <div class="accordion-content">
+
+            <p>
+
+              Reaproveitar materiais diminui
+              o lixo produzido.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TECNOLOGIA -->
+
+    <section class="tecnologia" id="tecnologia">
+
+      <h2>🤖 Tecnologia no Campo</h2>
+
+      <div class="tecnologia-grid">
+
+        <div class="tec-box">
+
+          <h3>🚜 Máquinas Modernas</h3>
+
+          <p>
+
+            Máquinas ajudam a produzir
+            mais com menos desperdício.
+
+          </p>
+
+        </div>
+
+        <div class="tec-box">
+
+          <h3>📡 Sensores Inteligentes</h3>
+
+          <p>
+
+            Sensores monitoram o solo,
+            clima e irrigação.
+
+          </p>
+
+        </div>
+
+        <div class="tec-box">
+
+          <h3>🌐 Internet Rural</h3>
+
+          <p>
+
+            A internet ajuda produtores
+            a utilizarem tecnologias avançadas.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- DADOS -->
+
+    <section class="dados" id="dados">
+
+      <h2>📊 Dados Sustentáveis</h2>
+
+      <div class="graficos">
+
+        <div class="grafico">
+
+          <div class="barra barra1"></div>
+
+          <p>Economia de Água</p>
+
+        </div>
+
+        <div class="grafico">
+
+          <div class="barra barra2"></div>
+
+          <p>Energia Limpa</p>
+
+        </div>
+
+        <div class="grafico">
+
+          <div class="barra barra3"></div>
+
+          <p>Reciclagem</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- QUIZ -->
+
+    <section class="quiz" id="quiz">
+
+      <h2>🧠 Quiz Ambiental</h2>
+
+      <div class="quiz-card">
+
+        <p>
+
+          Qual dessas ações ajuda o meio ambiente?
+
+        </p>
+
+        <div class="quiz-opcoes">
+
+          <button onclick="respostaErrada()">
+            Poluir rios
+          </button>
+
+          <button onclick="respostaCorreta()">
+            Plantar árvores
+          </button>
+
+          <button onclick="respostaErrada()">
+            Queimar florestas
+          </button>
+
+        </div>
+
+        <h3 id="resultado"></h3>
+
+      </div>
+
+    </section>
+
+    <!-- CONTATO -->
+
+    <section class="contato" id="contato">
+
+      <h2>📞 Contato</h2>
+
+      <div class="contato-container">
+
+        <div class="contato-card">
+
+          <h3>📱 Telefone</h3>
+
+          <p>(45) 99938-0477</p>
+
+        </div>
+
+        <div class="contato-card">
+
+          <h3>📧 E-mail</h3>
+
+          <p>agrinho2026@gmail.com</p>
+
+        </div>
+
+        <div class="contato-card">
+
+          <h3>📍 Localização</h3>
+
+          <p>Paraná - Brasil</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
 
       <p>
 
-        A agricultura sustentável protege o planeta,
-        preserva os recursos naturais e garante
-        alimentos saudáveis para as futuras gerações.
+        🌿 Projeto Agrinho 2026 |
+        Agricultura Sustentável
 
       </p>
 
-      <div class="hero-botoes">
+    </footer>
 
-        <button id="btnSaibaMais">
-          Saiba Mais
-        </button>
+  </main>
 
-        <button id="btnTema">
-          🌙 Tema Escuro
-        </button>
+  <!-- MODAL -->
 
-      </div>
+  <div class="modal" id="modal">
 
-    </div>
+    <div class="modal-box">
 
-  </section>
+      <span id="fecharModal">
+        ✖
+      </span>
 
-  <!-- SOBRE -->
+      <h2>🌎 Agricultura Sustentável</h2>
 
-  <section class="sobre" id="sobre">
+      <p>
 
-    <h2>📚 Sobre a Agricultura Sustentável</h2>
+        A sustentabilidade é fundamental
+        para proteger os recursos naturais
+        e garantir alimentos saudáveis.
 
-    <p class="texto-central">
+      </p>
 
-      A sustentabilidade na agricultura busca equilibrar
-      produção de alimentos e preservação ambiental.
-      Isso significa produzir sem destruir a natureza.
+      <p>
 
-    </p>
+        Pequenas ações fazem grande diferença,
+        como economizar água, preservar florestas
+        e utilizar energia limpa.
 
-    <div class="cards">
-
-      <div class="card">
-
-        <h3>💧 Economia de Água</h3>
-
-        <p>
-
-          A irrigação inteligente reduz desperdícios
-          e ajuda na preservação dos rios.
-
-        </p>
-
-        <button onclick="mostrarInfo('agua')">
-          Ler Mais
-        </button>
-
-      </div>
-
-      <div class="card">
-
-        <h3>🌳 Preservação Ambiental</h3>
-
-        <p>
-
-          As florestas ajudam no equilíbrio do clima
-          e na proteção dos animais.
-
-        </p>
-
-        <button onclick="mostrarInfo('natureza')">
-          Ler Mais
-        </button>
-
-      </div>
-
-      <div class="card">
-
-        <h3>☀️ Energia Limpa</h3>
-
-        <p>
-
-          Energia solar reduz a poluição
-          e economiza eletricidade.
-
-        </p>
-
-        <button onclick="mostrarInfo('energia')">
-          Ler Mais
-        </button>
-
-      </div>
-
-      <div class="card">
-
-        <h3>♻️ Reciclagem</h3>
-
-        <p>
-
-          Reciclar ajuda a diminuir a quantidade
-          de lixo produzido.
-
-        </p>
-
-        <button onclick="mostrarInfo('reciclagem')">
-          Ler Mais
-        </button>
-
-      </div>
+      </p>
 
     </div>
 
-    <!-- TEXTO DINÂMICO -->
-
-    <div id="caixaInformacao"></div>
-
-  </section>
-
-  <!-- BENEFÍCIOS -->
-
-  <section class="beneficios" id="beneficios">
-
-    <h2>🌎 Benefícios da Sustentabilidade</h2>
-
-    <div class="beneficios-grid">
-
-      <div class="beneficio-item">
-
-        <h3>🍎 Alimentos Saudáveis</h3>
-
-        <p>
-
-          Produção de alimentos naturais
-          e com menos agrotóxicos.
-
-        </p>
-
-      </div>
-
-      <div class="beneficio-item">
-
-        <h3>💚 Qualidade de Vida</h3>
-
-        <p>
-
-          Melhor saúde para produtores
-          e consumidores.
-
-        </p>
-
-      </div>
-
-      <div class="beneficio-item">
-
-        <h3>🌿 Proteção da Natureza</h3>
-
-        <p>
-
-          Preservação de rios, solos
-          e florestas.
-
-        </p>
-
-      </div>
-
-      <div class="beneficio-item">
-
-        <h3>📈 Desenvolvimento Econômico</h3>
-
-        <p>
-
-          Crescimento sustentável no campo.
-
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- PRÁTICAS -->
-
-  <section class="praticas" id="praticas">
-
-    <h2>🚜 Práticas Sustentáveis</h2>
-
-    <div class="timeline">
-
-      <div class="timeline-item">
-
-        <h3>🌱 Rotação de Culturas</h3>
-
-        <p>
-
-          Alternar plantações melhora
-          a fertilidade do solo.
-
-        </p>
-
-      </div>
-
-      <div class="timeline-item">
-
-        <h3>🐝 Proteção dos Polinizadores</h3>
-
-        <p>
-
-          Abelhas ajudam na produção
-          de alimentos.
-
-        </p>
-
-      </div>
-
-      <div class="timeline-item">
-
-        <h3>🌳 Reflorestamento</h3>
-
-        <p>
-
-          Árvores ajudam na produção
-          de oxigênio.
-
-        </p>
-
-      </div>
-
-      <div class="timeline-item">
-
-        <h3>☀️ Energia Solar</h3>
-
-        <p>
-
-          Fonte limpa e renovável
-          de energia.
-
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ESTATÍSTICAS -->
-
-  <section class="estatisticas" id="estatisticas">
-
-    <h2>📊 Estatísticas</h2>
-
-    <div class="numeros">
-
-      <div class="numero-box">
-
-        <h3 id="numero1">0</h3>
-
-        <p>Árvores Plantadas</p>
-
-      </div>
-
-      <div class="numero-box">
-
-        <h3 id="numero2">0</h3>
-
-        <p>Litros de Água Economizados</p>
-
-      </div>
-
-      <div class="numero-box">
-
-        <h3 id="numero3">0</h3>
-
-        <p>Produtores Sustentáveis</p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- GALERIA -->
-
-  <section class="galeria">
-
-    <h2>📸 Galeria Sustentável</h2>
-
-    <div class="galeria-grid">
-
-      <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854">
-
-      <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399">
-
-      <img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf">
-
-      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
-
-      <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735">
-
-      <img src="https://images.unsplash.com/photo-1492496913980-501348b61469">
-
-    </div>
-
-  </section>
-
-  <!-- QUIZ -->
-
-  <section class="quiz" id="quiz">
-
-    <h2>🧠 Quiz Sustentável</h2>
-
-    <div class="quiz-box">
-
-      <h3>
-
-        Qual dessas ações ajuda o meio ambiente?
-
-      </h3>
-
-      <button onclick="errado()">
-        Queimar Florestas
-      </button>
-
-      <button onclick="certo()">
-        Reflorestamento
-      </button>
-
-      <button onclick="errado()">
-        Poluir Rios
-      </button>
-
-      <button onclick="errado()">
-        Desmatamento
-      </button>
-
-      <p id="resultado"></p>
-
-    </div>
-
-  </section>
-
-  <!-- VÍDEOS -->
-
-  <section class="videos" id="videos">
-
-    <h2>🎥 Vídeos Educativos</h2>
-
-    <div class="videos-grid">
-
-      <iframe
-      src="https://www.youtube.com/embed/z8c1tS8R9Q8"
-      allowfullscreen></iframe>
-
-      <iframe
-      src="https://www.youtube.com/embed/IsAg-JqJnA8"
-      allowfullscreen></iframe>
-
-    </div>
-
-  </section>
-
-  <!-- CONTATO -->
-
-  <section class="contato" id="contato">
-
-    <h2>📞 Contato</h2>
-
-    <div class="contato-box">
-
-      <p>📧 agrinho2026@gmail.com</p>
-
-      <p>📱 (45) 99938-0477</p>
-
-      <p>📍 Paraná - Brasil</p>
-
-    </div>
-
-  </section>
-
-  <!-- BOTÃO TOPO -->
-
-  <button id="topoBtn">
-    ⬆
-  </button>
-
-  <!-- FOOTER -->
-
-  <footer>
-
-    <p>
-
-      🌱 Projeto Agrinho 2026 |
-      Sustentabilidade na Agricultura
-
-    </p>
-
-  </footer>
+  </div>
 
   <script src="script.js"></script>
 

@@ -567,12 +567,14 @@ margin-bottom:15px;
 
 .dark .autor-card{
 background:#222;
-  .credito{
+color:white;
+}
+
+.credito{
 margin-top:20px;
 font-size:14px;
 opacity:.9;
 }
-color:white;
 }#fecharMenu{
 width:100%;
 padding:10px;
@@ -596,7 +598,7 @@ border-radius:10px;
 background:#2e7d32;
 color:white;
 cursor:pointer;
-display:none;
+display:block;
 }
 
 .sidebar{

@@ -167,3 +167,53 @@ el.style.transition = ".8s";
 observer.observe(el);
 
 });
+// DICAS
+
+const dicas = [
+
+"Economize água fechando a torneira enquanto escova os dentes.",
+
+"Separe o lixo reciclável do lixo comum.",
+
+"Utilize lâmpadas de LED para economizar energia.",
+
+"Evite desperdício de alimentos.",
+
+"Plante árvores e preserve áreas verdes.",
+
+"Utilize energia solar sempre que possível."
+
+];
+
+function trocarDica(){
+
+const numero =
+Math.floor(Math.random()*dicas.length);
+
+document.getElementById("dicaBox").innerHTML =
+dicas[numero];
+
+}
+
+// RELÓGIO
+
+function atualizarHora(){
+
+const agora = new Date();
+
+let h = agora.getHours();
+let m = agora.getMinutes();
+let s = agora.getSeconds();
+
+h = h.toString().padStart(2,"0");
+m = m.toString().padStart(2,"0");
+s = s.toString().padStart(2,"0");
+
+document.getElementById("horaAtual").innerHTML =
+`${h}:${m}:${s}`;
+
+}
+
+setInterval(atualizarHora,1000);
+
+atualizarHora();

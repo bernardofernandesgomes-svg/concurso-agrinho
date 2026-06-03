@@ -546,3 +546,26 @@ color:#2e7d32;
 .dark #relogio{
 background:#1c1c1c;
 }
+#autor{
+text-align:center;
+padding:80px 30px;
+}
+
+.autor-card{
+max-width:700px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.autor-card h3{
+color:#2e7d32;
+margin-bottom:15px;
+}
+
+.dark .autor-card{
+background:#222;
+color:white;
+}

@@ -217,3 +217,20 @@ document.getElementById("horaAtual").innerHTML =
 setInterval(atualizarHora,1000);
 
 atualizarHora();
+const sidebar = document.querySelector(".sidebar");
+
+const abrirMenu = document.getElementById("abrirMenu");
+
+const fecharMenu = document.getElementById("fecharMenu");
+
+fecharMenu.addEventListener("click", () => {
+
+sidebar.classList.add("fechada");
+
+});
+
+abrirMenu.addEventListener("click", () => {
+
+sidebar.classList.remove("fechada");
+
+});

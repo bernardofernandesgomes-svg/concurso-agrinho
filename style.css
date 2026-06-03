@@ -567,5 +567,10 @@ margin-bottom:15px;
 
 .dark .autor-card{
 background:#222;
+  .credito{
+margin-top:20px;
+font-size:14px;
+opacity:.9;
+}
 color:white;
 }

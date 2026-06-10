@@ -2,270 +2,890 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🌿 EcoCampo | Agrinho 2026</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🌿 EcoCampo | Agrinho 2026</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <!-- BOTÃO TOPO -->
-  <button id="topo">▲</button>
+<!-- BOTÃO TOPO -->
 
-  <!-- MENU LATERAL (SIDEBAR) -->
-  <aside class="sidebar">
-    <button id="fecharMenu">✖ Fechar Menu</button>
-    <h1>🌿 EcoCampo</h1>
-    <nav>
-      <a href="#inicio">🏠 Início</a>
-      <a href="#sustentabilidade">🌱 Sustentabilidade</a>
-      <a href="#desafios">⚠️ Desafios</a>
-      <a href="#solucoes">💡 Soluções</a>
-      <a href="#tecnologia">🤖 Tecnologia</a>
-      <a href="#dados">📊 Dados</a>
-      <a href="#contadorArvores">🌳 Árvores</a>
-      <a href="#quiz">🧠 Quiz</a>
-      <a href="#galeria">📸 Galeria</a>
-      <a href="#qrcode">📱 QR Code</a>
-      <a href="#contato">📞 Contato</a>
-    </nav>
-    <button id="modoEscuro">🌙 Modo Escuro</button>
-  </aside>
+<button id="topo">
+⬆
+</button>
 
-  <!-- BOTÃO GATILHO PARA ABRIR NO MOBILE -->
-  <button id="abrirMenu">☰ Menu</button>
+<!-- MENU -->
 
-  <!-- CONTEÚDO PRINCIPAL -->
-  <main class="conteudo">
+<aside class="sidebar">
 
-    <!-- HERO -->
-    <section class="hero" id="inicio">
-      <div class="overlay"></div>
-      <div class="hero-texto">
-        <h2>🌱 Agro Forte, Futuro Sustentável</h2>
-        <p>Produzir alimentos preservando a natureza é garantir qualidade de vida para as gerações atuais e futuras.</p>
-        <a href="#sustentabilidade">
-          <button id="explorar">🚜 Explorar Projeto</button>
-        </a>
-      </div>
-    </section>
+<button id="fecharMenu">✖ Fechar Menu</button>
 
-    <!-- ESTATÍSTICAS -->
-    <section class="estatisticas">
-      <div class="estatistica">
-        <h2 id="contador1">0</h2>
-        <p>Árvores Preservadas</p>
-      </div>
-      <div class="estatistica">
-        <h2 id="contador2">0</h2>
-        <p>Litros Economizados</p>
-      </div>
-      <div class="estatistica">
-        <h2 id="contador3">0</h2>
-        <p>Produtores Conscientes</p>
-      </div>
-    </section>
+<h1>🌿 EcoCampo</h1>
 
-    <!-- SUSTENTABILIDADE -->
-    <section class="secao" id="sustentabilidade">
-      <div class="titulo-secao">
-        <span>🌱</span>
-        <h2>O que é Sustentabilidade?</h2>
-      </div>
-      <div class="layout-duplo">
-        <div class="texto">
-          <p>A sustentabilidade busca equilibrar a produção agrícola com a preservação ambiental.</p>
-          <p>Seu objetivo é garantir alimentos de qualidade sem comprometer os recursos naturais.</p>
-          <p>Quando agricultores utilizam práticas sustentáveis, ajudam a proteger o solo, a água e a biodiversidade.</p>
-          <button onclick="abrirModal()">📖 Ler Explicação Completa</button>
-        </div>
-        <div class="imagem">
-          <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="Sustentabilidade">
-        </div>
-      </div>
-    </section>
+<nav>
 
-    <!-- DESAFIOS -->
-    <section class="desafios" id="desafios">
-      <h2>⚠️ Problemas Ambientais</h2>
-      <div class="painel-cards">
-        <div class="painel">
-          <h3>🔥 Queimadas</h3>
-          <p>As queimadas destroem vegetações, afetam animais e aumentam a emissão de gases poluentes.</p>
-        </div>
-        <div class="painel">
-          <h3>💧 Desperdício de Água</h3>
-          <p>O uso inadequado da água pode gerar escassez e prejudicar a produção agrícola.</p>
-        </div>
-        <div class="painel">
-          <h3>🌳 Desmatamento</h3>
-          <p>A retirada excessiva de florestas reduz a biodiversidade e afeta o clima.</p>
-        </div>
-        <div class="painel">
-          <h3>🗑️ Poluição</h3>
-          <p>O descarte incorreto de resíduos prejudica rios, solos e animais.</p>
-        </div>
-      </div>
-    </section>
+<a href="#inicio">🏠 Início</a>
 
-    <!-- SOLUÇÕES -->
-    <section class="solucoes" id="solucoes">
-      <h2>💡 Soluções Sustentáveis</h2>
-      <div class="accordion">
-        <div class="accordion-item">
-          <button class="accordion-btn">💧 Irrigação Inteligente</button>
-          <div class="accordion-content">
-            <p>Sensores monitoram a necessidade da planta e reduzem o desperdício de água.</p>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <button class="accordion-btn">☀️ Energia Solar</button>
-          <div class="accordion-content">
-            <p>A energia solar diminui custos e reduz impactos ambientais.</p>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <button class="accordion-btn">♻️ Reciclagem</button>
-          <div class="accordion-content">
-            <p>A reciclagem reduz o volume de lixo e reaproveita materiais importantes.</p>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <button class="accordion-btn">🌳 Reflorestamento</button>
-          <div class="accordion-content">
-            <p>O plantio de árvores ajuda na recuperação de áreas degradadas.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<a href="#sustentabilidade">🌱 Sustentabilidade</a>
 
-    <!-- TECNOLOGIA -->
-    <section class="tecnologia" id="tecnologia">
-      <h2>🤖 Tecnologia no Campo</h2>
-      <div class="tecnologia-grid">
-        <div class="tec-box">
-          <h3>🚜 Máquinas Modernas</h3>
-          <p>Aumentam a produtividade e reduzem desperdícios.</p>
-        </div>
-        <div class="tec-box">
-          <h3>📡 Sensores Inteligentes</h3>
-          <p>Monitoram temperatura, umidade e condições do solo.</p>
-        </div>
-        <div class="tec-box">
-          <h3>🌐 Internet Rural</h3>
-          <p>Facilita o acesso a tecnologias e informações.</p>
-        </div>
-        <div class="tec-box">
-          <h3>🛰️ Drones</h3>
-          <p>Auxiliam no monitoramento de plantações e no combate a pragas.</p>
-        </div>
-      </div>
-    </section>
+<a href="#desafios">⚠️ Desafios</a>
 
-    <!-- CONTADOR -->
-    <section id="contadorArvores" class="contador-arvores">
-      <h2>🌳 Árvores Preservadas</h2>
-      <div class="numero-arvores">
-        <span id="arvores">0</span>
-      </div>
-      <p>Cada ação sustentável ajuda a proteger o meio ambiente.</p>
-    </section>
+<a href="#solucoes">💡 Soluções</a>
 
-    <!-- DADOS -->
-    <section class="dados" id="dados">
-      <h2>📊 Dados Sustentáveis</h2>
-      <div class="graficos">
-        <div class="grafico">
-          <h3>💧 Economia de Água</h3>
-          <div class="barra barra1"></div>
-          <p>A irrigação inteligente pode economizar até 60% da água utilizada.</p>
-        </div>
-        <div class="grafico">
-          <h3>☀️ Energia Limpa</h3>
-          <div class="barra barra2"></div>
-          <p>O uso de energia solar pode reduzir significativamente a emissão de poluentes.</p>
-        </div>
-        <div class="grafico">
-          <h3>♻️ Reciclagem</h3>
-          <div class="barra barra3"></div>
-          <p>A reciclagem reduz resíduos e ajuda na preservação dos recursos naturais.</p>
-        </div>
-      </div>
-    </section>
+<a href="#tecnologia">🤖 Tecnologia</a>
 
-    <!-- QUIZ -->
-    <section class="quiz" id="quiz">
-      <h2>🧠 Quiz Ambiental</h2>
-      <div class="quiz-card">
-        <h3>1. Qual ação ajuda o meio ambiente?</h3>
-        <button onclick="respostaCorreta()">Plantar árvores</button>
-        <button onclick="respostaErrada()">Poluir rios</button>
-        <button onclick="respostaErrada()">Queimar florestas</button>
-        <hr>
-        <h3>2. Qual é uma fonte de energia limpa?</h3>
-        <button onclick="respostaErrada()">Petróleo</button>
-        <button onclick="respostaCorreta()">Energia Solar</button>
-        <button onclick="respostaErrada()">Carvão</button>
-        <hr>
-        <h3>3. O que ajuda a economizar água?</h3>
-        <button onclick="respostaCorreta()">Irrigação Inteligente</button>
-        <button onclick="respostaErrada()">Desperdício</button>
-        <button onclick="respostaErrada()">Vazamentos</button>
-        <hr>
-        <h3>4. O que reduz a quantidade de lixo?</h3>
-        <button onclick="respostaCorreta()">Reciclagem</button>
-        <button onclick="respostaErrada()">Queimadas</button>
-        <button onclick="respostaErrada()">Desmatamento</button>
-        <hr>
-        <h3>5. O que ajuda a recuperar áreas degradadas?</h3>
-        <button onclick="respostaCorreta()">Reflorestamento</button>
-        <button onclick="respostaErrada()">Poluição</button>
-        <button onclick="respostaErrada()">Queimadas</button>
+<a href="#dados">📊 Dados</a>
 
-        <h2 id="resultado"></h2>
-        <button class="certificado-btn" onclick="mostrarCertificado()">🏆 Ver Certificado</button>
-      </div>
-    </section>
+<a href="#contadorArvores">🌳 Árvores</a>
 
-    <!-- GALERIA -->
-    <section id="galeria">
-      <h2>📸 Galeria Sustentável</h2>
-      <div class="galeria-grid">
-        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="Imagem 1">
-        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" alt="Imagem 2">
-        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Imagem 3">
-        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027" alt="Imagem 4">
-        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" alt="Imagem 5">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Imagem 6">
-      </div>
-    </section>
+<a href="#quiz">🧠 Quiz</a>
 
-    <!-- QR CODE -->
-    <section id="qrcode">
-      <h2>📱 Acesse pelo Celular</h2>
-      <div class="qr-container">
-        <img src="qrcode.png" alt="QR Code">
-        <p>Escaneie o QR Code para acessar este projeto pelo celular.</p>
-      </div>
-    </section>
+<a href="#galeria">📸 Galeria</a>
 
-    <!-- CONTATO -->
-    <section class="contato" id="contato">
-      <h2>📞 Contato</h2>
-      <div class="contato-container">
-        <div class="contato-card">
-          <h3>E-mail</h3>
-          <p>contato@ecocampo.com.br</p>
-        </div>
-        <div class="contato-card">
-          <h3>Telefone</h3>
-          <p>(41) 99999-9999</p>
-        </div>
-      </div>
-    </section>
+<a href="#qrcode">📱 QR Code</a>
 
-    <!-- FOOTER -->
-    <footer>
+<a href="#contato">📞 Contato</a>
+
+</nav>
+
+<button id="modoEscuro">
+🌙 Modo Escuro
+</button>
+
+</aside>
+
+<!-- CONTEÚDO -->
+
+<button id="abrirMenu">☰ Menu</button>
+
+<main class="conteudo">
+
+<!-- HERO -->
+
+<section class="hero" id="inicio">
+
+<div class="overlay"></div>
+
+<div class="hero-texto">
+
+<h2>
+🌱 Agro Forte, Futuro Sustentável
+</h2>
+
+<p>
+
+Produzir alimentos preservando a natureza é garantir qualidade de vida para as gerações atuais e futuras.
+
+</p>
+
+<a href="#sustentabilidade">
+
+<button id="explorar">
+
+🚜 Explorar Projeto
+
+</button>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ESTATÍSTICAS -->
+
+<section class="estatisticas">
+
+<div class="estatistica">
+
+<h2 id="contador1">0</h2>
+
+<p>Árvores Preservadas</p>
+
+</div>
+
+<div class="estatistica">
+
+<h2 id="contador2">0</h2>
+
+<p>Litros Economizados</p>
+
+</div>
+
+<div class="estatistica">
+
+<h2 id="contador3">0</h2>
+
+<p>Produtores Conscientes</p>
+
+</div>
+
+</section>
+<!-- SUSTENTABILIDADE -->
+
+<section class="secao" id="sustentabilidade">
+
+<div class="titulo-secao">
+
+<span>🌱</span>
+
+<h2>O que é Sustentabilidade?</h2>
+
+</div>
+
+<div class="layout-duplo">
+
+<div class="texto">
+
+<p>
+
+A sustentabilidade busca equilibrar a produção agrícola com a preservação ambiental.
+
+</p>
+
+<p>
+
+Seu objetivo é garantir alimentos de qualidade sem comprometer os recursos naturais.
+
+</p>
+
+<p>
+
+Quando agricultores utilizam práticas sustentáveis, ajudam a proteger o solo, a água e a biodiversidade.
+
+</p>
+
+<button onclick="abrirModal()">
+
+📖 Ler Explicação Completa
+
+</button>
+
+</div>
+
+<div class="imagem">
+
+<img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DESAFIOS -->
+
+<section class="desafios" id="desafios">
+
+<h2>⚠️ Problemas Ambientais</h2>
+
+<div class="painel-cards">
+
+<div class="painel">
+
+<h3>🔥 Queimadas</h3>
+
+<p>
+
+As queimadas destroem vegetações, afetam animais e aumentam a emissão de gases poluentes.
+
+</p>
+
+</div>
+
+<div class="painel">
+
+<h3>💧 Desperdício de Água</h3>
+
+<p>
+
+O uso inadequado da água pode gerar escassez e prejudicar a produção agrícola.
+
+</p>
+
+</div>
+
+<div class="painel">
+
+<h3>🌳 Desmatamento</h3>
+
+<p>
+
+A retirada excessiva de florestas reduz a biodiversidade e afeta o clima.
+
+</p>
+
+</div>
+
+<div class="painel">
+
+<h3>🗑️ Poluição</h3>
+
+<p>
+
+O descarte incorreto de resíduos prejudica rios, solos e animais.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SOLUÇÕES -->
+
+<section class="solucoes" id="solucoes">
+
+<h2>💡 Soluções Sustentáveis</h2>
+
+<div class="accordion">
+
+<div class="accordion-item">
+
+<button class="accordion-btn">
+
+💧 Irrigação Inteligente
+
+</button>
+
+<div class="accordion-content">
+
+<p>
+
+Sensores monitoram a necessidade da planta e reduzem o desperdício de água.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<button class="accordion-btn">
+
+☀️ Energia Solar
+
+</button>
+
+<div class="accordion-content">
+
+<p>
+
+A energia solar diminui custos e reduz impactos ambientais.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<button class="accordion-btn">
+
+♻️ Reciclagem
+
+</button>
+
+<div class="accordion-content">
+
+<p>
+
+A reciclagem reduz o volume de lixo e reaproveita materiais importantes.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="accordion-item">
+
+<button class="accordion-btn">
+
+🌳 Reflorestamento
+
+</button>
+
+<div class="accordion-content">
+
+<p>
+
+O plantio de árvores ajuda na recuperação de áreas degradadas.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TECNOLOGIA -->
+
+<section class="tecnologia" id="tecnologia">
+
+<h2>🤖 Tecnologia no Campo</h2>
+
+<div class="tecnologia-grid">
+
+<div class="tec-box">
+
+<h3>🚜 Máquinas Modernas</h3>
+
+<p>
+
+Aumentam a produtividade e reduzem desperdícios.
+
+</p>
+
+</div>
+
+<div class="tec-box">
+
+<h3>📡 Sensores Inteligentes</h3>
+
+<p>
+
+Monitoram temperatura, umidade e condições do solo.
+
+</p>
+
+</div>
+
+<div class="tec-box">
+
+<h3>🌐 Internet Rural</h3>
+
+<p>
+
+Facilita o acesso a tecnologias e informações.
+
+</p>
+
+</div>
+
+<div class="tec-box">
+
+<h3>🛰️ Drones</h3>
+
+<p>
+
+Auxiliam no monitoramento de plantações e no combate a pragas.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTADOR -->
+
+<section id="contadorArvores" class="contador-arvores">
+
+<h2>🌳 Árvores Preservadas</h2>
+
+<div class="numero-arvores">
+
+<span id="arvores">0</span>
+
+</div>
+
+<p>
+
+Cada ação sustentável ajuda a proteger o meio ambiente.
+
+</p>
+
+</section>
+<!-- DADOS -->
+
+<section class="dados" id="dados">
+
+<h2>📊 Dados Sustentáveis</h2>
+
+<div class="graficos">
+
+<div class="grafico">
+
+<h3>💧 Economia de Água</h3>
+
+<div class="barra barra1"></div>
+
+<p>
+A irrigação inteligente pode economizar até 60% da água utilizada.
+</p>
+
+</div>
+
+<div class="grafico">
+
+<h3>☀️ Energia Limpa</h3>
+
+<div class="barra barra2"></div>
+
+<p>
+O uso de energia solar pode reduzir significativamente a emissão de poluentes.
+</p>
+
+</div>
+
+<div class="grafico">
+
+<h3>♻️ Reciclagem</h3>
+
+<div class="barra barra3"></div>
+
+<p>
+A reciclagem reduz resíduos e ajuda na preservação dos recursos naturais.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- QUIZ -->
+
+<section class="quiz" id="quiz">
+
+<h2>🧠 Quiz Ambiental</h2>
+
+<div class="quiz-card">
+
+<h3>1. Qual ação ajuda o meio ambiente?</h3>
+
+<button onclick="respostaCorreta()">Plantar árvores</button>
+
+<button onclick="respostaErrada()">Poluir rios</button>
+
+<button onclick="respostaErrada()">Queimar florestas</button>
+
+<hr>
+
+<h3>2. Qual é uma fonte de energia limpa?</h3>
+
+<button onclick="respostaErrada()">Petróleo</button>
+
+<button onclick="respostaCorreta()">Energia Solar</button>
+
+<button onclick="respostaErrada()">Carvão</button>
+
+<hr>
+
+<h3>3. O que ajuda a economizar água?</h3>
+
+<button onclick="respostaCorreta()">Irrigação Inteligente</button>
+
+<button onclick="respostaErrada()">Desperdício</button>
+
+<button onclick="respostaErrada()">Vazamentos</button>
+
+<hr>
+
+<h3>4. O que reduz a quantidade de lixo?</h3>
+
+<button onclick="respostaCorreta()">Reciclagem</button>
+
+<button onclick="respostaErrada()">Queimadas</button>
+
+<button onclick="respostaErrada()">Desmatamento</button>
+
+<hr>
+
+<h3>5. O que ajuda a recuperar áreas degradadas?</h3>
+
+<button onclick="respostaCorreta()">Reflorestamento</button>
+
+<button onclick="respostaErrada()">Poluição</button>
+
+<button onclick="respostaErrada()">Queimadas</button>
+
+<h2 id="resultado"></h2>
+
+<button class="certificado-btn" onclick="mostrarCertificado()">
+🏆 Ver Certificado
+</button>
+
+</div>
+
+</section>
+
+<!-- GALERIA -->
+
+<section id="galeria">
+
+<h2>📸 Galeria Sustentável</h2>
+
+<div class="galeria-grid">
+
+<img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854">
+
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399">
+
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+
+<img src="https://images.unsplash.com/photo-1472396961693-142e6e269027">
+
+<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+</div>
+
+</section>
+
+<!-- QR CODE -->
+
+<section id="qrcode">
+
+<h2>📱 Acesse pelo Celular</h2>
+
+<div class="qr-container">
+
+<img src="qrcode.png" alt="QR Code">
+
+<p>
+
+Escaneie o QR Code para acessar este projeto pelo celular.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- CONTATO -->
+
+<section class="contato" id="contato">
+
+<h2>📞 Contato</h2>
+
+<div class="contato-container">
+
+<div class="contato-card">
+
+<h3>📱 Telefone</h3>
+
+<p>(45) 99999-9999</p>
+
+</div>
+
+<div class="contato-card">
+
+<h3>📧 E-mail</h3>
+
+<p>ecocampo@agrinho2026.com</p>
+
+</div>
+
+<div class="contato-card">
+
+<h3>📍 Localização</h3>
+
+<p>Paraná - Brasil</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CERTIFICADO -->
+
+<div class="certificado" id="certificado">
+
+<div class="certificado-box">
+
+<h2>🏆 Certificado Ambiental</h2>
+
+<p>
+
+Parabéns! Você concluiu o Quiz Ambiental do projeto EcoCampo.
+
+</p>
+
+<p>
+
+Seu compromisso com a sustentabilidade contribui para um futuro melhor.
+
+</p>
+
+<button onclick="fecharCertificado()">
+
+Fechar
+
+</button>
+
+</div>
+
+</div>
+
+<!-- MODAL -->
+
+<div class="modal" id="modal">
+
+<div class="modal-box">
+
+<span id="fecharModal">
+✖
+</span>
+
+<h2>🌎 Agricultura Sustentável</h2>
+
+<p>
+
+A agricultura sustentável busca equilibrar produção e preservação ambiental.
+
+</p>
+
+<p>
+
+Ela utiliza recursos naturais de forma consciente, protege a biodiversidade e garante alimentos para as futuras gerações.
+
+</p>
+
+<p>
+
+Pequenas atitudes fazem grande diferença: economizar água, reciclar resíduos, utilizar energias limpas e preservar florestas.
+
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>
+
+🌿 Projeto Agrinho 2026 | EcoCampo
+
+</p>
+
+</footer>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<!-- CURIOSIDADES -->
+
+<section id="curiosidades">
+
+<h2>🌎 Curiosidades Ambientais</h2>
+
+<div class="curiosidades-grid">
+
+<div class="curiosidade-card">
+<h3>🌳 Árvore</h3>
+<p>
+Uma árvore adulta pode absorver cerca de 22 kg de CO₂ por ano.
+</p>
+</div>
+
+<div class="curiosidade-card">
+<h3>💧 Água</h3>
+<p>
+A agricultura utiliza aproximadamente 70% da água doce consumida no mundo.
+</p>
+</div>
+
+<div class="curiosidade-card">
+<h3>🐝 Abelhas</h3>
+<p>
+Grande parte dos alimentos depende da polinização realizada por insetos.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- DICA DO DIA -->
+
+<section id="dica">
+
+<h2>💡 Dica Sustentável do Dia</h2>
+
+<div class="dica-box" id="dicaBox">
+
+Economize água fechando a torneira enquanto escova os dentes.
+
+</div>
+
+<button onclick="trocarDica()">
+
+Nova Dica
+
+</button>
+
+</section>
+
+<!-- RELÓGIO -->
+
+<section id="relogio">
+
+<h2>⏰ Horário Atual</h2>
+
+<h1 id="horaAtual">
+
+00:00:00
+
+</h1>
+
+</section>
+<section id="impactos">
+
+<h2>🌎 Impactos Positivos da Sustentabilidade</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>💧 Água</h3>
+<p>Redução do desperdício e preservação dos rios.</p>
+</div>
+
+<div class="card">
+<h3>🌳 Florestas</h3>
+<p>Proteção da biodiversidade e do clima.</p>
+</div>
+
+<div class="card">
+<h3>🍎 Alimentos</h3>
+<p>Produção mais saudável e segura.</p>
+</div>
+
+</div>
+
+</section>
+<section id="sabia">
+
+<h2>🤔 Você Sabia?</h2>
+
+<div class="card">
+
+<p>
+Uma única árvore pode produzir oxigênio suficiente para até duas pessoas por dia.
+</p>
+
+</div>
+
+</section>
+<section id="timeline">
+
+<h2>📅 Evolução da Agricultura</h2>
+
+<ul>
+
+<li>🌱 Agricultura Tradicional</li>
+
+<li>🚜 Mecanização</li>
+
+<li>📡 Agricultura de Precisão</li>
+
+<li>🤖 Agricultura Inteligente</li>
+
+</ul>
+
+</section>
+<section id="meta">
+
+<h2>🎯 Meta para 2030</h2>
+
+<div class="card">
+
+<p>
+Reduzir o desperdício de água, aumentar o uso de energia limpa e preservar áreas naturais.
+</p>
+
+</div>
+
+</section>
+<section id="animais">
+
+<h2>🐝 Animais e Agricultura</h2>
+
+<p>
+
+Abelhas, pássaros e outros animais ajudam na polinização e no equilíbrio ambiental.
+
+</p>
+
+</section>
+<section id="clima">
+
+<h2>🌦️ Clima e Agricultura</h2>
+
+<p>
+
+O clima influencia diretamente a produção agrícola, afetando plantações e colheitas.
+
+</p>
+
+</section>
+<section id="dicas">
+
+<h2>💡 10 Dicas Sustentáveis</h2>
+
+<ol>
+
+<li>Economize água.</li>
+<li>Recicle materiais.</li>
+<li>Evite queimadas.</li>
+<li>Preserve florestas.</li>
+<li>Use energia solar.</li>
+<li>Plante árvores.</li>
+<li>Reduza o desperdício.</li>
+<li>Proteja animais.</li>
+<li>Use tecnologias sustentáveis.</li>
+<li>Conscientize outras pessoas.</li>
+
+</ol>
+
+</section>
+<footer>
+  <section id="autor">
+
+<h2>👨‍🎓 Autor do Projeto</h2>
+
+<div class="autor-card">
+
+<h3>Bernardo Fernandes Gomes</h3>
+
+<p><strong>Turma:</strong> 1º Ano</p>
+
+<p><strong>Colégio:</strong> Colégio Marilis Faria Pirotelli</p>
+
+<p>
+Projeto desenvolvido para o Agrinho 2026 com o tema:
+"Agro Forte, Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente".
+</p>
+
+</div>
+
+</section>
+<p class="credito">
+
+Projeto desenvolvido por Bernardo Fernandes Gomes • 1º Ano • Colégio Marilis Faria Pirotelli
+
+</p>

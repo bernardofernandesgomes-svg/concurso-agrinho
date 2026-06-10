@@ -217,20 +217,32 @@ document.getElementById("horaAtual").innerHTML =
 setInterval(atualizarHora,1000);
 
 atualizarHora();
+document.addEventListener("DOMContentLoaded", () => {
+
 const sidebar = document.querySelector(".sidebar");
 
 const abrirMenu = document.getElementById("abrirMenu");
 
 const fecharMenu = document.getElementById("fecharMenu");
 
-fecharMenu.addEventListener("click", () => {
+if(fecharMenu){
 
-sidebar.classList.add("fechada");
+fecharMenu.onclick = () => {
 
-});
+sidebar.style.display = "none";
 
-abrirMenu.addEventListener("click", () => {
+};
 
-sidebar.classList.remove("fechada");
+}
+
+if(abrirMenu){
+
+abrirMenu.onclick = () => {
+
+sidebar.style.display = "block";
+
+};
+
+}
 
 });

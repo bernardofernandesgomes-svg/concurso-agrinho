@@ -1,180 +1,248 @@
 // MODAL
+
 const modal = document.getElementById("modal");
 const fecharModal = document.getElementById("fecharModal");
 
-function abrirModal() {
-  if (modal) modal.style.display = "flex";
+function abrirModal(){
+modal.style.display = "flex";
 }
 
-if (fecharModal && modal) {
-  fecharModal.onclick = () => {
-    modal.style.display = "none";
-  };
-}
+fecharModal.onclick = () =>{
+modal.style.display = "none";
+};
 
 // QUIZ
+
 let pontos = 0;
 
-function respostaCorreta() {
-  pontos++;
-  const resultado = document.getElementById("resultado");
-  if (resultado) resultado.innerHTML = "✅ Pontuação: " + pontos;
+function respostaCorreta(){
+
+pontos++;
+
+document.getElementById("resultado").innerHTML =
+"✅ Pontuação: " + pontos;
+
 }
 
-function respostaErrada() {
-  const resultado = document.getElementById("resultado");
-  if (resultado) resultado.innerHTML = "❌ Resposta incorreta";
+function respostaErrada(){
+
+document.getElementById("resultado").innerHTML =
+"❌ Resposta incorreta";
+
 }
 
 // CERTIFICADO
-function mostrarCertificado() {
-  const certificado = document.getElementById("certificado");
-  if (!certificado) return;
 
-  if (pontos >= 5) {
-    certificado.style.display = "flex";
-  } else {
-    alert("Acerte todas as perguntas para ganhar o certificado!");
-  }
+function mostrarCertificado(){
+
+if(pontos >= 5){
+
+document.getElementById("certificado").style.display =
+"flex";
+
+}else{
+
+alert("Acerte todas as perguntas para ganhar o certificado!");
+
 }
 
-function fecharCertificado() {
-  const certificado = document.getElementById("certificado");
-  if (certificado) certificado.style.display = "none";
+}
+
+function fecharCertificado(){
+
+document.getElementById("certificado").style.display =
+"none";
+
 }
 
 // MODO ESCURO
-const btnModoEscuro = document.getElementById("modoEscuro");
-if (btnModoEscuro) {
-  btnModoEscuro.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-  });
-}
 
-// VOLTAR AO TOPO
-const btnTopo = document.getElementById("topo");
-if (btnTopo) {
-  btnTopo.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-}
+document.getElementById("modoEscuro")
+.addEventListener("click",()=>{
 
-// CONTADORES
-function animarContador(id, final) {
-  const elemento = document.getElementById(id);
-  if (!elemento) return;
+document.body.classList.toggle("dark");
 
-  let numero = 0;
-  let intervalo = setInterval(() => {
-    numero += Math.ceil(final / 100);
-
-    if (numero >= final) {
-      numero = final;
-      clearInterval(intervalo);
-    }
-    elemento.innerHTML = numero.toLocaleString();
-  }, 20);
-}
-
-// Inicialização dos contadores de forma segura
-document.addEventListener("DOMContentLoaded", () => {
-  animarContador("contador1", 15000);
-  animarContador("contador2", 500000);
-  animarContador("contador3", 2500);
-  animarContador("arvores", 35000);
 });
 
-// ACCORDION
-const botoes = document.querySelectorAll(".accordion-btn");
-botoes.forEach(botao => {
-  botao.addEventListener("click", () => {
-    const conteudo = botao.nextElementSibling;
-    if (!conteudo) return;
+// VOLTAR AO TOPO
 
-    if (conteudo.style.maxHeight) {
-      conteudo.style.maxHeight = null;
-    } else {
-      conteudo.style.maxHeight = conteudo.scrollHeight + "px";
-    }
-  });
+document.getElementById("topo")
+.addEventListener("click",()=>{
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+});
+
+// CONTADORES
+
+function animarContador(id,final){
+
+let numero = 0;
+
+let intervalo = setInterval(()=>{
+
+numero += Math.ceil(final/100);
+
+if(numero >= final){
+
+numero = final;
+
+clearInterval(intervalo);
+
+}
+
+document.getElementById(id).innerHTML =
+numero.toLocaleString();
+
+},20);
+
+}
+
+animarContador("contador1",15000);
+animarContador("contador2",500000);
+animarContador("contador3",2500);
+animarContador("arvores",35000);
+
+// ACCORDION
+
+const botoes =
+document.querySelectorAll(".accordion-btn");
+
+botoes.forEach(botao=>{
+
+botao.addEventListener("click",()=>{
+
+const conteudo =
+botao.nextElementSibling;
+
+if(conteudo.style.maxHeight){
+
+conteudo.style.maxHeight = null;
+
+}else{
+
+conteudo.style.maxHeight =
+conteudo.scrollHeight + "px";
+
+}
+
+});
+
 });
 
 // ANIMAÇÃO AO ROLAR
-const elementos = document.querySelectorAll(".painel, .tec-box, .grafico, .contato-card");
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = "1";
-      entry.target.style.transform = "translateY(0px)";
-    }
-  });
+
+const elementos =
+document.querySelectorAll(
+".painel,.tec-box,.grafico,.contato-card"
+);
+
+const observer =
+new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity = "1";
+entry.target.style.transform =
+"translateY(0px)";
+
+}
+
 });
 
-elementos.forEach(el => {
-  el.style.opacity = "0";
-  el.style.transform = "translateY(40px)";
-  el.style.transition = ".8s";
-  observer.observe(el);
 });
 
+elementos.forEach(el=>{
+
+el.style.opacity = "0";
+el.style.transform =
+"translateY(40px)";
+el.style.transition = ".8s";
+
+observer.observe(el);
+
+});
 // DICAS
+
 const dicas = [
-  "Economize água fechando a torneira enquanto escova os dentes.",
-  "Separe o lixo reciclável do lixo comum.",
-  "Utilize lâmpadas de LED para economizar energia.",
-  "Evite desperdício de alimentos.",
-  "Plante árvores e preserve áreas verdes.",
-  "Utilize energia solar sempre que possível."
+
+"Economize água fechando a torneira enquanto escova os dentes.",
+
+"Separe o lixo reciclável do lixo comum.",
+
+"Utilize lâmpadas de LED para economizar energia.",
+
+"Evite desperdício de alimentos.",
+
+"Plante árvores e preserve áreas verdes.",
+
+"Utilize energia solar sempre que possível."
+
 ];
 
-function trocarDica() {
-  const dicaBox = document.getElementById("dicaBox");
-  if (!dicaBox) return;
-  
-  const numero = Math.floor(Math.random() * dicas.length);
-  dicaBox.innerHTML = dicas[numero];
+function trocarDica(){
+
+const numero =
+Math.floor(Math.random()*dicas.length);
+
+document.getElementById("dicaBox").innerHTML =
+dicas[numero];
+
 }
 
 // RELÓGIO
-function atualizarHora() {
-  const horaAtual = document.getElementById("horaAtual");
-  if (!horaAtual) return;
 
-  const agora = new Date();
-  let h = agora.getHours().toString().padStart(2, "0");
-  let m = agora.getMinutes().toString().padStart(2, "0");
-  let s = agora.getSeconds().toString().padStart(2, "0");
+function atualizarHora(){
 
-  horaAtual.innerHTML = `${h}:${m}:${s}`;
+const agora = new Date();
+
+let h = agora.getHours();
+let m = agora.getMinutes();
+let s = agora.getSeconds();
+
+h = h.toString().padStart(2,"0");
+m = m.toString().padStart(2,"0");
+s = s.toString().padStart(2,"0");
+
+document.getElementById("horaAtual").innerHTML =
+`${h}:${m}:${s}`;
+
 }
-setInterval(atualizarHora, 1000);
+
+setInterval(atualizarHora,1000);
+
 atualizarHora();
-
-// CONTROLE DO MENU LATERAL (SIDEBAR)
 document.addEventListener("DOMContentLoaded", () => {
-  const sidebar = document.querySelector(".sidebar");
-  const conteudo = document.querySelector(".conteudo");
-  const abrirMenu = document.getElementById("abrirMenu");
-  const fecharMenu = document.getElementById("fecharMenu");
 
-  if (!sidebar) return;
+const sidebar = document.querySelector(".sidebar");
 
-  if (abrirMenu) {
-    abrirMenu.onclick = () => {
-      sidebar.classList.add("aberta");
-      sidebar.classList.remove("fechada");
-      if (conteudo) conteudo.classList.remove("menu-fechado");
-    };
-  }
+const abrirMenu = document.getElementById("abrirMenu");
 
-  if (fecharMenu) {
-    fecharMenu.onclick = () => {
-      sidebar.classList.remove("aberta");
-      sidebar.classList.add("fechada");
-      if (conteudo) conteudo.classList.add("menu-fechado");
-    };
-  }
+const fecharMenu = document.getElementById("fecharMenu");
+
+if(fecharMenu){
+
+fecharMenu.onclick = () => {
+
+sidebar.style.display = "none";
+
+};
+
+}
+
+if(abrirMenu){
+
+abrirMenu.onclick = () => {
+
+sidebar.style.display = "block";
+
+};
+
+}
+
 });
